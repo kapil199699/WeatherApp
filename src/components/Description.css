@@ -1,0 +1,63 @@
+/* // function x(){
+//     var a=7;
+//     function y(){
+//         console.log(a)
+//     }
+//     y();
+// }
+// x();
+
+
+// function sum(a){
+//     console.log("sum"+2);
+//     var c=4;
+//     return function(b){
+//         return a+b+c;
+//     }
+// }
+
+// var store=sum(2);
+// console.log(store(5));
+
+
+
+ */
+
+
+ .section__descriptions{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+ }
+
+ .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background-overlay);
+
+    padding: 1rem;
+    border-radius: 0.4rem;
+ }
+
+ .description__card__icon{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 12 px;
+ }
+
+ .description__card__icon>small{
+    text-transform: capitalize;
+ }
+ 
+ @media screen and (max-width: 1024px) {
+    .section__descriptions {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+ }
